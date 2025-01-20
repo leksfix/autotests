@@ -3,5 +3,6 @@ def capitalize(text):
         return None
     if text == '':
         return ''
-    return f'{text[0].upper()}{text[1:]}'
+    #return f'{text[0].upper()}{text[1:]}'
+    return f'{text[0].upper()}{text[0:]}'
 
