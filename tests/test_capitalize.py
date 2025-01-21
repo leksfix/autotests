@@ -1,9 +1,7 @@
 from capitalize import capitalize
 
-if capitalize('hello') != 'Hello':
-    raise Exception('Function test failed!')
-
-if capitalize('') != '':
-    raise Exception('Function test failed!')
+assert capitalize('hello') == 'Hello'
+assert capitalize('') == ''
+assert capitalize(None) is None
 
 print('All tests passed!')
